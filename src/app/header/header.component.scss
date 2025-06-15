@@ -1,0 +1,30 @@
+#h3ader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f7c707;
+  padding: 10px 20px;
+}
+.navegacion {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  margin: 5px;
+  gap: 20px; 
+  color:#4b270f;
+}
+.navegacion li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.navegacion li:hover {
+  color: #ffffff;
+}
+
+
+    
+    
+    
+
