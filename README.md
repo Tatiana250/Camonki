@@ -1,6 +1,12 @@
-# Camonkii
 
+# Camonkii
+Pagina web de compra online de productos para mascotas.
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+
+## Informacion personal
+Nombre y apellido: Tatiana Pereyra
+Mail: tati25pereyra@gmail.com
+Sede: Rauch
 
 ## Development server
 
