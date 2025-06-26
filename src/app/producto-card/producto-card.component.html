@@ -1,5 +1,8 @@
 <div class="producto-card">
-  <h3>{{ producto.name }}</h3>
-  <li>{{ producto.img}}</li>
-  <p>Precio: {{ producto.price | currency }}</p>
+  <ul>
+    <li> <h4>{{ producto.name }}</h4></li>
+    <li><img [src]="producto.img" alt="Imagen del producto {{producto.name}}" class="img-thumbnail"></li>
+    <li><p>{{producto.breveDescripcion}}</p></li>
+    <li><p>Precio: {{ producto.price | currency }}</p></li>
+  </ul>
 </div>
