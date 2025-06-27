@@ -1,8 +1,10 @@
-<div class="producto-card">
-  <ul>
-    <li> <h4>{{ producto.name }}</h4></li>
-    <li><img [src]="producto.img" alt="Imagen del producto {{producto.name}}" class="img-thumbnail"></li>
-    <li><p>{{producto.breveDescripcion}}</p></li>
-    <li><p>Precio: {{ producto.price | currency }}</p></li>
-  </ul>
+
+<div class="card" style="width: 18rem;">
+  <img [src]="producto.img" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{producto.name}}</h5>
+    <p class="card-text">{{producto.breveDescripcion}}</p>
+    <p>{{ producto.price | currency }}</p>
+    <a class="btn btn-primary">Agregar al carrito</a>
+  </div>
 </div>

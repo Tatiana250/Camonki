@@ -18,7 +18,6 @@ export class DestacadosComponent implements OnInit, OnDestroy {
   ngOnInit(): void { //funcion para suscribirme
     this.suscripcion = this.destacados.getAll().subscribe(data => {
       this.listaDestacados = data;
-      console.log(this.listaDestacados);
     });
   }
 

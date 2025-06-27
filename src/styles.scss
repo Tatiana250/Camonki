@@ -1,3 +1,9 @@
-body{
-    background-image: url('https://t4.ftcdn.net/jpg/11/42/31/15/360_F_1142311538_sqatQh2qGwQpSJ5PmLp2om7DsWQcQg2Q.jpg');
+body {
+  overflow-x: hidden;
+}
+
+div.contenedorProd { //esto va aca porque de lo contrario no me muestra los cambios.
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
