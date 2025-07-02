@@ -3,16 +3,16 @@
     <img src="img/imagen.png" alt="imagen" height="90px" class="imagen">
     <img src="img/Titulo.png" alt="titulo" height="60px">
     <ol class="navegacion">
-      <li>Home</li>
-      <li>Productos</li>
-      <li>Carrito</li>
+      <li><a href='home'>Home</a></li>
+      <li><a href='productos'>Productos</a></li>
+      <li><a href='miCarrito'>Carrito</a></li>
       <li>Registrarse</li>
     </ol>
   </div>
 </header>
 
 <div class="productos">
-<app-destacados> </app-destacados>
+  <router-outlet> </router-outlet>
 </div>
 
 <footer>

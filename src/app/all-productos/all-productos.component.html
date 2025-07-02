@@ -1,0 +1,10 @@
+<div class="mainconte">
+    <h2>Todos los productos</h2>
+    <div class="contenedorProd">
+        <ng-container *ngFor="let producto of listaProductos; trackBy: trackById">
+            <app-producto-card
+                [producto]="producto" class="product">
+            </app-producto-card>
+        </ng-container>
+    </div>
+</div>

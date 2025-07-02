@@ -1,11 +1,11 @@
 <div class="mainconte">
-<h2>Productos Destacados</h2>
-<div class="contenedorProd">
-<ng-container *ngFor="let producto of listaDestacados; trackBy: trackById">
-   <app-producto-card
-      *ngIf="producto.esDestacado" 
-      [producto]="producto" class="product">
-   </app-producto-card>
-</ng-container>
-</div>
+   <h2>Productos Destacados</h2>
+   <div class="contenedorProd" #contenedor>
+      <ng-container *ngFor="let producto of listaDestacados; trackBy: trackById">
+            <app-producto-card
+               *ngIf="producto.esDestacado" 
+               [producto]="producto" class="product">
+            </app-producto-card>
+      </ng-container>
+   </div>
 </div>

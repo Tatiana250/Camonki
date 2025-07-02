@@ -17,6 +17,10 @@ export class ProductsDataService {
     return this.http.get<Product[]>(URL);
   }
 
+  getId(id: number): Observable<Product> {
+    return this.http.get<Product>(`${URL}/${id}`); //pido la id especifica a la api
+  }
+
 
 
 }

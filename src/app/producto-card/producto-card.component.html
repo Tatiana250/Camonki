@@ -1,10 +1,10 @@
 
-<div class="card" style="width: 18rem;">
-  <img [src]="producto.img" class="card-img-top" alt="...">
+<div class="card" style="width: 18rem">
+  <img [src]="producto.img" class="card-img-top" alt="imagen del producto">
   <div class="card-body">
     <h5 class="card-title">{{producto.name}}</h5>
     <p class="card-text">{{producto.breveDescripcion}}</p>
     <p>{{ producto.price | currency }}</p>
-    <a class="btn btn-primary">Agregar al carrito</a>
+    <a [routerLink]="['/producto', producto.id]" class="btn btn-primary">Ver más</a>
   </div>
 </div>

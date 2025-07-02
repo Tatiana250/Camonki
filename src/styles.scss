@@ -2,8 +2,11 @@ body {
   overflow-x: hidden;
 }
 
-div.contenedorProd { //esto va aca porque de lo contrario no me muestra los cambios.
+div.contenedorProd {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  gap: 10px; 
 }

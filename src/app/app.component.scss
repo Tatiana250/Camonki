@@ -7,6 +7,7 @@
   color: #4b270f;
 }
 .navegacion {
+  text-decoration: none;
   width: 100%;
   list-style: none;
   display: flex;
@@ -17,11 +18,11 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-right: 10%;
 }
-.navegacion li {
+.navegacion a {
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.navegacion li:hover {
+.navegacion a:hover {
   color: #ffffff;
 }
 .imagen{
@@ -29,4 +30,12 @@
 }
 #foot{
    justify-content: space-between
+}
+.productos{
+  margin: 10px;
+  margin-left: 50px;
+}
+a{
+  color: #4b270f;
+  text-decoration: none;
 }

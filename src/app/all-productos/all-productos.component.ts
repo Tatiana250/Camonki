@@ -1,27 +1,25 @@
-import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { ProductsDataService } from '../services/products-data.service';
-import { Product} from '../product';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Product } from '../product';
 import { Subscription } from 'rxjs';
-import { CarritoService } from '../services/carrito.service';
+import { ProductsDataService } from '../services/products-data.service';
 
 @Component({
-  selector: 'app-destacados',
-  standalone: false ,
-  templateUrl: `./destacados.component.html`,
-  styleUrl: './destacados.component.scss',
+  selector: 'app-all-productos',
+  standalone: false,
+  templateUrl: './all-productos.component.html',
+  styleUrl: './all-productos.component.scss'
 })
-export class DestacadosComponent implements OnInit, OnDestroy {
-
-  listaDestacados: Product[] = [];
+export class AllProductosComponent {
+  listaProductos: Product[] = [];
   private suscripcion!: Subscription;
 
-  constructor(private destacados: ProductsDataService) {}
+  constructor(private productos: ProductsDataService) {}
 
   @ViewChild('contenedor', { static: false }) contenedor!: ElementRef;
 
   ngOnInit(): void { //funcion para suscribirme
-    this.suscripcion = this.destacados.getAll().subscribe(data => {
-      this.listaDestacados = data;
+    this.suscripcion = this.productos.getAll().subscribe(data => {
+      this.listaProductos = data;
     });
   }
 
@@ -34,7 +32,7 @@ export class DestacadosComponent implements OnInit, OnDestroy {
   trackById(index: number, item: Product): number {
     return item.id;
   }
-
+  
    desplazarIzquierda() {
     this.contenedor.nativeElement.scrollBy({
       left: -200,
@@ -48,6 +46,5 @@ export class DestacadosComponent implements OnInit, OnDestroy {
       behavior: 'smooth'
     });
   }
-
-  
 }
+

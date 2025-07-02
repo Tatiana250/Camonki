@@ -1,0 +1,37 @@
+.productosCarrito{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 3%;
+}
+
+.contendeorProducto{
+    border: 1px solid  rgb(192, 190, 190);
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 2%
+}
+img{
+    margin-top: 2px;
+    width: 300px;
+}
+.body{
+    margin-top: 5%;
+}
+.informacion{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%
+   
+}
+h2{
+    text-decoration: underline;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.info {
+   text-decoration: underline;
+}
