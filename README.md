@@ -1,11 +1,14 @@
 
 # Camonkii
-Pagina web de compra online de productos para mascotas.
+Pet shop online, ofrece una variedad de productos para mascotas. Tiene una seccion 'home' donde se ven los productos mas vendidos, y otra seccion donde puede verse la totalidad de productos disponibles; puede verse mas informacion del producto haciendo click en el boton que muestra. Tiene un carrito, el cual muestra la totalidad de productos agregados y el valor acumulado hasta el momento. Finalmente, tiene una opcion de registrarse donde, mediante un formulario, el usuario puede crearse una cuenta para utilizar la web.
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
 
 ## Informacion personal
 Nombre y apellido: Tatiana Pereyra
+
+DNI: 47159185
 
 Mail: tati25pereyra@gmail.com
 
