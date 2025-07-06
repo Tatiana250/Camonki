@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Product } from '../product';
+import { Product } from '../interfaces/product';
 
 const URL = 'https://685034f2e7c42cfd1797d7a0.mockapi.io/api/camonkii/products';
 

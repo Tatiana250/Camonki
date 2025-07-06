@@ -1,8 +1,8 @@
 import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { ProductsDataService } from '../services/products-data.service';
-import { Product} from '../product';
+import { ProductsDataService } from '../../services/products-data.service';
+import { Product} from '../../interfaces/product';
 import { Subscription } from 'rxjs';
-import { CarritoService } from '../services/carrito.service';
+import { CarritoService } from '../../services/carrito.service';
 
 @Component({
   selector: 'app-destacados',

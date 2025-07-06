@@ -3,12 +3,13 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DestacadosComponent } from './destacados/destacados.component';
+import { DestacadosComponent } from './components/destacados/destacados.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProductoCardComponent } from './producto-card/producto-card.component';
-import { AllProductosComponent } from './all-productos/all-productos.component';
-import { CarritoComponent } from './carrito/carrito.component';
-import { ProductoIdComponent } from './producto-id/producto-id.component';
+import { ProductoCardComponent } from './components/producto-card/producto-card.component';
+import { AllProductosComponent } from './components/all-productos/all-productos.component';
+import { CarritoComponent } from './components/carrito/carrito.component';
+import { ProductoIdComponent } from './components/producto-id/producto-id.component';
+import { RegistroUsuarioComponent } from './components/registro-usuario/registro-usuario.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ProductoIdComponent } from './producto-id/producto-id.component';
     AllProductosComponent,
     CarritoComponent,
     ProductoIdComponent,
+    RegistroUsuarioComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { Product } from '../product';
+import { Product } from '../../interfaces/product';
 import { Subscription } from 'rxjs';
-import { ProductsDataService } from '../services/products-data.service';
+import { ProductsDataService } from '../../services/products-data.service';
 
 @Component({
   selector: 'app-all-productos',

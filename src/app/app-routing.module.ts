@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DestacadosComponent } from './destacados/destacados.component';
-import { AllProductosComponent } from './all-productos/all-productos.component';
-import { CarritoComponent } from './carrito/carrito.component';
-import { ProductoIdComponent } from './producto-id/producto-id.component';
+import { DestacadosComponent } from './components/destacados/destacados.component';
+import { AllProductosComponent } from './components/all-productos/all-productos.component';
+import { CarritoComponent } from './components/carrito/carrito.component';
+import { ProductoIdComponent } from './components/producto-id/producto-id.component';
+import { RegistroUsuarioComponent } from './components/registro-usuario/registro-usuario.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'producto/:id',
     component: ProductoIdComponent
+  },
+  {
+    path: 'singUp',
+    component: RegistroUsuarioComponent
   },
 ];
 

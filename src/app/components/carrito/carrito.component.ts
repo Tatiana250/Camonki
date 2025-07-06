@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Product } from '../product';
-import { CarritoService } from '../services/carrito.service';
+import { Product } from '../../interfaces/product';
+import { CarritoService } from '../../services/carrito.service';
 import { Subscription } from 'rxjs';
 
 @Component({

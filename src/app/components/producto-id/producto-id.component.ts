@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Product } from '../product';
+import { Product } from '../../interfaces/product';
 import { Subscription } from 'rxjs';
-import { CarritoService } from '../services/carrito.service';
-import { ProductsDataService } from '../services/products-data.service';
+import { CarritoService } from '../../services/carrito.service';
+import { ProductsDataService } from '../../services/products-data.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
