@@ -10,6 +10,7 @@ import { AllProductosComponent } from './components/all-productos/all-productos.
 import { CarritoComponent } from './components/carrito/carrito.component';
 import { ProductoIdComponent } from './components/producto-id/producto-id.component';
 import { RegistroUsuarioComponent } from './components/registro-usuario/registro-usuario.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RegistroUsuarioComponent } from './components/registro-usuario/registro
     BrowserModule,
     AppRoutingModule,
     HttpClientModule, 
+    ReactiveFormsModule,
 ],
   providers: [
     provideClientHydration(withEventReplay())
